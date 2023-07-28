@@ -1,4 +1,4 @@
-const withMT = require("@material-tailwind/.react-YFGUkrDQ/src/utils/withMT");
+const withMT = require("@material-tailwind/react/src/utils/withMT")
 
 module.exports = withMT({
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
@@ -10,4 +10,3 @@ module.exports = withMT({
   },
   plugins: [],
 });
-
