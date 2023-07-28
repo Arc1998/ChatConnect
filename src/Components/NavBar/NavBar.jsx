@@ -1,22 +1,25 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import NavLinks from "./NavLink";
+import UserLink from "./UserLink";
 
-const NavBar = () => {
+
+const Navbar = () => {
   return (
-    <>
-      <div className="flex justify-between items-center border-b border-gray-100 w-full px-44 py-2">
-        NavBar
-        <Link to="/">
-          <div className="text-3xl font-extrabold text-gray-900 dark:text-white font-roboto">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r to-red-600 from-blue-400">
-              Social Media
-            </span>
-            App
-          </div>
-        </Link>
+    <div className="flex justify-between items-center border-b border-gray-100 w-full px-44 py-2 ">
+      <div className="text-3xl font-extrabold ">
+        <span className="text-transparent bg-clip-text bg-gradient-to-r to-red-600 from-blue-400">
+        ChatConnect
+        </span>
       </div>
-    </>
+
+      <div className="flex justify-center item-center mx-auto">
+        <NavLinks></NavLinks>
+      </div>
+      <div>
+        <UserLink></UserLink>
+      </div>
+    </div>
   );
 };
 
-export default NavBar;
+export default Navbar;
